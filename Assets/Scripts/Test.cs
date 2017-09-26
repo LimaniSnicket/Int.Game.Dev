@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Test : MonoBehaviour {
 
+	public bool sequenceStart = false;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -13,6 +15,7 @@ public class Test : MonoBehaviour {
 	void Update () {
 		if(Input.GetKey(KeyCode.Space)){
 			Destroy (gameObject);
+			sequenceStart = true;
 		}
 	}
 }
